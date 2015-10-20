@@ -13,6 +13,8 @@ RUN apt-get -y -q install supervisor
 RUN a2enmod rewrite
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
+RUN adduser --system --group --home /var/www/webdev webdev && adduser webdev www-data
+
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 EXPOSE 80
