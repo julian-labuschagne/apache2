@@ -15,7 +15,7 @@ RUN a2enmod rewrite
 
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
-VOLUME /var/www
+VOLUME /var/www/webdev/platforms
 VOLUME /etc/apache2/sites-enabled
 
 EXPOSE 80
