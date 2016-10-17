@@ -1,6 +1,6 @@
 FROM debian:latest
 MAINTAINER Julian Labuschagne "julian.labuschagne@gmail.com"
-ENV REFRESHED_AT 2016-06-06
+ENV REFRESHED_AT 2016-10-17
 ENV TERM linux
 
 RUN apt-get -y -q update && \
